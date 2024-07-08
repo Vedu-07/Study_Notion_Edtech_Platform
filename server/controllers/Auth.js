@@ -80,7 +80,7 @@ exports.signUp = async (req, res) => {
     if (!firstName || !lastName || !email || !password || !confirmPassword || !otp) {
       return res.status(403).json({
         success: false,
-        message: "All Feilds Are Required",
+        message: "All Fields Are Required",
       });
     }
 
