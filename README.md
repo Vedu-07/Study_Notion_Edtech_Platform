@@ -1,2 +1,2 @@
 # EDTECH Platform
-### Full Fledged Learning Management System 
+### Full Fledged Learning Management System
