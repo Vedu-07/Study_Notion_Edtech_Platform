@@ -5,9 +5,7 @@ const crypto = require("crypto");
 
 exports.resetPasswordToken = async (req, res) => {
 	try {
-        // Data Fetchiong
 		const email = req.body.email;
-        // Validation
 		const user = await User.findOne({ email: email });
 		if (!user) {
 			return res.json({
@@ -15,7 +13,6 @@ exports.resetPasswordToken = async (req, res) => {
 				message: `This Email: ${email} is not Registered With Us Enter a Valid Email `,
 			});
 		}
-        // Creating Token Using crypto Library
 		const token = crypto.randomBytes(20).toString("hex");
 
 		const updatedDetails = await User.findOneAndUpdate(
@@ -52,9 +49,8 @@ exports.resetPasswordToken = async (req, res) => {
 
 exports.resetPassword = async (req, res) => {
 	try {
-        // Fetch
 		const { password, confirmPassword, token } = req.body;
-        // Validate
+
 		if (confirmPassword !== password) {
 			return res.json({
 				success: false,
@@ -74,7 +70,6 @@ exports.resetPassword = async (req, res) => {
 				message: `Token is Expired, Please Regenerate Your Token`,
 			});
 		}
-        // New Password Hashed and DB Entry Created
 		const encryptedPassword = await bcrypt.hash(password, 10);
 		await User.findOneAndUpdate(
 			{ token: token },

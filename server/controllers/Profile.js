@@ -90,7 +90,7 @@ exports.deleteAccount = async (req, res) => {
     console.log(error)
     res
       .status(500)
-      .json({ success: false, message: "User Cannot be Deleted" })
+      .json({ success: false, message: "User Cannot be deleted successfully" })
   }
 }
 

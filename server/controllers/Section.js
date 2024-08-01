@@ -27,7 +27,7 @@ exports.createSection = async (req, res) => {
 				},
 			},
 			{ new: true }
-		)   //Population Is Necessary For Subsection to get added above only object id has been added
+		)
 			.populate({
 				path: "courseContent",
 				populate: {
