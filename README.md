@@ -12,6 +12,9 @@ The front-end of the platform is built using ReactJS, which allows for the creat
 ## Front End Pages
 ### For Students:
 
+![Screenshot 2024-08-18 100209](https://github.com/user-attachments/assets/784eb791-360e-47a1-aef8-c259eecc8bad)
+
+
 * Homepage: A brief introduction to the platform with links to the course list and user details.
 * Course List: A list of all the courses available on the platform, along with their descriptions and ratings.
 * Wishlist: Displays all the courses that a student has added to their wishlist.
