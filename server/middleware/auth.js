@@ -29,7 +29,7 @@ exports.auth = async (req, res, next) => {
 			// If JWT verification fails, return 401 Unauthorized response
 			return res
 				.status(401)
-				.json({ success: false, message: "Token is Invalid" });
+				.json({ success: false, message: "token is invalid" });
 		}
 
 		// If JWT is valid, move on to the next middleware or request handler
@@ -42,8 +42,6 @@ exports.auth = async (req, res, next) => {
 		});
 	}
 };
-
-// For Role Of Student
 exports.isStudent = async (req, res, next) => {
 	try {
 		const userDetails = await User.findOne({ email: req.user.email });
@@ -61,7 +59,6 @@ exports.isStudent = async (req, res, next) => {
 			.json({ success: false, message: `User Role Can't be Verified` });
 	}
 };
-// For Role Of Admin
 exports.isAdmin = async (req, res, next) => {
 	try {
 		const userDetails = await User.findOne({ email: req.user.email });
@@ -79,7 +76,6 @@ exports.isAdmin = async (req, res, next) => {
 			.json({ success: false, message: `User Role Can't be Verified` });
 	}
 };
-// For Role Of Instructor
 exports.isInstructor = async (req, res, next) => {
 	try {
 		const userDetails = await User.findOne({ email: req.user.email });
