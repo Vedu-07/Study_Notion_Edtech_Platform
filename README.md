@@ -1,7 +1,7 @@
 # Introduction
 StudyNotion aims to provide a seamless and interactive learning experience for students, making education more accessible and engaging. Additionally, the platform serves as a platform for instructors to showcase their expertise and connect with learners across the globe.
 
-In the following sections, we will cover the technical details of the platform, including the system architecture, API design, installation, usage instructions, and potential future enhancements.
+![Screenshot 2024-08-18 095003](https://github.com/user-attachments/assets/557c25d4-37de-4c96-921a-0596c1d6578b)
 
 ## System Architecture
 The StudyNotion EdTech platform consists of three main components: the front-end, the back-end, and the database. The platform follows a client-server architecture, with the front-end serving as the client and the back-end and database serving as the server.
