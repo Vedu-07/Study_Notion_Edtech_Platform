@@ -72,7 +72,7 @@ exports.signup = async (req, res) => {
       })
     }
 
-    // Hash the password
+    // Hash the password For Security
     const hashedPassword = await bcrypt.hash(password, 10)
 
     // Create the user
