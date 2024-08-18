@@ -71,5 +71,11 @@ The database for the platform is built using MongoDB, a NoSQL database that prov
 
 ![Screenshot 2024-08-18 100938](https://github.com/user-attachments/assets/0632ceaf-bfc6-4b3c-bcdf-3e0ef692c9b2)
 
+# For Run This Project In Your Machine: 
+1) Clone This Repository
+2) Install All Dependencies (Check Package.json)
+3) Create .env Folder (Refer .env.example)
+4) 2 .env folders are required One Is For Backend (Inside Server Folder) and another One Is Outside all Folders which Contains react_app_base_url for connection to backend
+5) start with npm run dev 
 
 
